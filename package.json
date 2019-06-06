@@ -1,0 +1,50 @@
+{
+  "name": "use-browser-state",
+  "version": "1.0.0",
+  "description": "React hook for keeping state in local storage",
+  "repository": "https://github.com/markmiro/use-browser-state.git",
+  "author": "Mark Miro <contact@markmiro.com> (https://markmiro.com)",
+  "license": "MIT",
+  "main": "index.cjs.js",
+  "module": "index.esm.js",
+  "scripts": {
+    "build": "npm run build:prod && npm run build:dev",
+    "build:prod": "NODE_ENV=production rollup -c",
+    "build:dev": "NODE_ENV=development rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "localstorage"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "prettier": "1.17.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "rollup": "1.13.1",
+    "rollup-plugin-babel": "4.3.2",
+    "rollup-plugin-banner": "0.2.0",
+    "rollup-plugin-commonjs": "10.0.0",
+    "rollup-plugin-node-license": "0.0.4",
+    "rollup-plugin-node-resolve": "5.0.1",
+    "rollup-plugin-terser": "5.0.0",
+    "debounce": "1.2.0"
+  },
+  "peerDependencies": {
+    "react": "16.8.6"
+  },
+  "files": [
+    "lib",
+    "index.cjs.js",
+    "index.esm.js"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
